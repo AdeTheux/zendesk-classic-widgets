@@ -1,0 +1,24 @@
+{% capture tags %}
+{{ ticket.tags }}
+{% endcapture %}
+
+{% if tags contains 'runners_need' %}
+Kind regards,
+
+runnersneed.com Team
+Tel: 0845 376 7669
+{% endif %}
+
+{% if tags contains 'cycle_surgery' %}
+Kind regards,
+
+cyclesurgery.com Team
+Tel: 0800 298 8898
+{% endif %}
+
+{% if tags contains 'snow_rock' %}
+Kind regards,
+
+snowandrock.com Team
+Tel: 0845 100 1000
+{% endif %}

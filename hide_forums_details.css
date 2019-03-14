@@ -1,0 +1,13 @@
+/* Hide image, name and date on forum post */
+
+div.entry-container p.entry_user, img.entry_user {
+   display:none;
+}
+/* Hide the date only on the "recents" page */
+p.info.data {display:none}
+
+/* Hide the name of the submitter on forum and article leve */
+p.entry_user
+{display: none;}
+#contentcolumn p.entry_user a
+{display: none;}

@@ -1,0 +1,40 @@
+{% capture tags %}
+{{ ticket.tags }}
+{% endcapture %}
+{% if tags contains 'cma_cgm' %}
+</center><img src="http://LINK/items/2I1r1B2r0k1v2q0N2G3Z/mime-attachment.png" /></center>
+{% endif %}
+{% if tags contains 'delmas' %}
+</center><img src="http://LINK/items/3c0u3X410S2h3f1V3I1Z/logo-DELMAS.PNG" /></center>
+{% endif %}
+{% if tags contains 'anl' %}
+</center><img src="http://LINK/items/380q2P1g2Z1X1E1k2v3T/logo-ANL.PNG" /></center>
+{% endif %}
+{% if tags contains 'cnc_line' %}
+</center><img src="http://LINK/items/3p1E1Q1Z2y0E1k2z3Y1N/logo-CNC.PNG" /></center>
+{% endif %}
+{% if tags contains 'us_lines' %}
+</center><img src="http://LINK/items/411g1I313N0I0j3r0J1O/logo-USL.PNG" /></center>
+{% endif %}
+
+Hi {{ticket.requester.first_name}},
+
+Your request "{{ticket.title}}" has been received and is being reviewed by our support staff.
+
+To add additional comments, reply to this email.
+{% if tags contains 'true' %}
+Use this FREE online service to edit/print your BLs and to track and trace your shipments:
+{% if tags contains 'cma_cgm' %}LINK/help/support/request/{{ticket.id}}{% endif %}
+{% if tags contains 'delmas' %}LINK/help/support/request/{{ticket.id}}{% endif %}
+{% if tags contains 'anl' %}LINK/help/support/request/{{ticket.id}}{% endif %}
+{% if tags contains 'us_lines' %}LINK/help/support/request/{{ticket.id}}{% endif %}
+{% if tags contains 'cnc_line' %}LINK/help/support/request/{{ticket.id}}{% endif %}
+{% endif %}
+
+
+
+Regards,
+{{ticket.account}}
+---
+
+{{ticket.comments_formatted}}

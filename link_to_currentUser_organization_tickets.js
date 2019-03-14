@@ -1,0 +1,1 @@
+$j("a:contains('Click here to view existing requests')").parent().after("<li class=\"link\"><a href=\"/organizations/"+currentUser.organization.id+"/requests\">Click here to view cases from other members of your Organization</a></li>")

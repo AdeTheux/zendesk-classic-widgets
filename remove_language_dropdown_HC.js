@@ -1,0 +1,1 @@
+$("ul.dropdown-panel li a:contains('Nederlands')").remove();

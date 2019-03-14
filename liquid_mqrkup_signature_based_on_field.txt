@@ -1,0 +1,13 @@
+{% case ticket.ticket_field_option_title_20329908 %} {% when 'Es cliente' %}
+
+{{ticket.comments_formatted}}
+
+FIRMA PARA LOS CLIENTES 
+
+{% else %} 
+
+{{ticket.comments_formatted}}
+
+FIRMA PARA LOS NO CLIENTES
+
+{% endcase %}

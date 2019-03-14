@@ -1,0 +1,17 @@
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+};
+ 
+var returnto = getParameterByName("return_to");
+ 
+var brandurl = new URL(document.referrer).hostname;
+ 
+if (brandurl === "brand1.zendesk.com"){
+	window.location.replace("https://brandssourl1/authentication.html?return_to="+returnto);
+}
+else if (brandurl === "brand2.zendesk.com"){
+	window.location.replace("https://brandssourl2/authentication.html?return_to="+returnto);
+};

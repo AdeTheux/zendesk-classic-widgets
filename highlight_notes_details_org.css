@@ -1,0 +1,7 @@
+div.side-box-content h5 + p {
+    color: red;
+}
+
+div.side-box-content div[id*="organizations"] p {
+   color: red;
+}

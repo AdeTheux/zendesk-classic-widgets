@@ -1,0 +1,14 @@
+{% case ticket.brand.name %}  
+{% when 'Brand 1' %}  
+
+<a href="http://brand1.com" target="_blank" border="0"><img src="http://link.to/brand1.jpg" alt="brand1" border="0" /></a>  
+
+{% when 'Brand 2' %}  
+
+<a href="http://brand2.com" target="_blank" border="0"><img src="http://link.to/brand2.jpg" alt="brand2" border="0" /></a>  
+
+{% else %}  
+
+<a href="http://nobrand.com" target="_blank" border="0"><img src="http://link.to/nobrand.jpg" alt="nobrand" border="0" /></a>  
+
+{% endcase %}  

@@ -1,0 +1,11 @@
+Your request (#{{ticket.id}}) has been updated. Reply to this email or click the link below:
+http://{{ticket.url}}
+
+<div style="border-top:1px dotted #c5c5c5;">
+
+{% for comment in ticket.comments %}
+
+  {{ comment }}
+
+{% endfor %}
+<div>

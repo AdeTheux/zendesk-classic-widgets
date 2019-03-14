@@ -1,0 +1,1 @@
+$j(".entry-container p.entry_user").hide();

@@ -1,0 +1,11 @@
+{% for comment in ticket.comments %}
+
+   {% for attachment in comment.attachments %}
+   Attachments: {{attachment.url}}
+
+   {% endfor %}
+{% endfor %}
+
+{% for comment in ticket.comments limit:1 offset:0 %}
+	{{comment.value}}
+{% endfor %}

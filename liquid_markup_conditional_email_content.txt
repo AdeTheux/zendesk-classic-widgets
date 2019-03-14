@@ -1,0 +1,3 @@
+{% if ticket.requester.last_name == ticket.requester.first_name %}Hello{% else %}Hi {{ ticket.requester.first_name | capitalize }}{% endif %},
+
+Thank you for {% if ticket.via == "Mail" %}your email{% else %}getting in touch{% endif %}.
